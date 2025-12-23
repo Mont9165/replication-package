@@ -68,11 +68,12 @@ python src/4_download_commits.py
 python src/5_get_analysis.py
 ```
 
-5. Outputs
+## 5. Outputs
+
 | Script                        | Output File / Directory                                      | Description                                   |
 |--------------------------------|-------------------------------------------------------------|-----------------------------------------------|
 | `src/1_get_commitNum.py`       | -                                                           | Number of commits selected for analysis      |
-| `src/2_get_commitsList.py`     | `data/processed/filtered_commits.csv` <br> `data/processed/filtered_commits.parquet` | Full list of commits extracted               |
+| `src/2_get_commitsList.py`     | `data/processed/filtered_commits.csv`<br>`data/processed/filtered_commits.parquet` | Full list of commits extracted               |
 | `src/3_get_commitsList_231.py` | `data/results/filtered_commits_231.csv`                     | Randomly sampled commit list                  |
 | `src/4_download_commits.py`    | `data/processed/commit_summary_readability_3metrics.csv`   | Readability metrics per commit                |
 | `src/5_get_analysis.py`        | -                                                           | Statistical test results (Wilcoxon)          |
