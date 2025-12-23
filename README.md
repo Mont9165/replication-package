@@ -1,7 +1,7 @@
 # Replication Package of "Do AI Agents Really Improve Code Readability?"
 This repository includes the replication package including the source code and results of the paper.
 
-## 1. Overview
+## Overview
 
 This study analyzes Git commits to evaluate changes in code readability metrics before and after code modifications.
 Specifically, we compute the following metrics at the commit level:
@@ -14,7 +14,7 @@ Statistical significance is assessed using the Wilcoxon signed-rank test.
 
 ---
 
-## 2. Require
+## Require
 The experiments were conducted using the following environment:
 
 - Python 3.8 or higher
@@ -22,11 +22,23 @@ The experiments were conducted using the following environment:
 
 The required Python packages and their exact versions are listed in `requirements.txt`:
 
-## 3. How to run
+## Data
+
+Download the following files from [AIDev-full dataset on Hugging Face](https://huggingface.co/datasets/hao-li/AIDev-full) and place them in the `data/raw/` directory:
+
+- `pr_commits.parquet`
+- `all_pull_request.parquet`
+- `pr_commit_details.parquet`
+
+Ensure that the file paths are preserved exactly as listed above so that subsequent scripts can access them correctly.
+
+
+## How to run
 
 1. Install dependencies:
 ```bash
 pip install -r requirements.txt
+```
 
 2. Make sure the parquet files are in data/raw/:
 
